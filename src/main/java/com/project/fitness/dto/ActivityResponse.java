@@ -1,0 +1,25 @@
+package com.project.fitness.dto;
+
+import com.project.fitness.model.ActivityType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+import java.util.Map;
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class ActivityResponse {
+    private String id;
+    private String userid;
+    private ActivityType type;
+    private Integer duration;
+    private Integer caloriesBurned;
+    private LocalDateTime startTime;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+    private Map<String, Object> additionalMetrics;
+}
